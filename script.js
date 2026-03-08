@@ -6,7 +6,8 @@ const defaultImages = {
     shisha: "https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=400&q=80",
     juices: "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=400&q=80",
     milkshake:"https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=400&q=80",
-    snacks:"Gemini_Generated_Image_di6ki9di6ki9di6k1.png"
+    snacks:"Gemini_Generated_Image_di6ki9di6ki9di6k1.png",
+    smoothie:"https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=400&q=80"
 };
 
 // البيانات المستخرجة من الصور
@@ -259,4 +260,5 @@ function createCard(item) {
 
 // تشغيل الدوال عند تحميل الصفحة
 renderCategories();
+
 renderMenu();
