@@ -202,8 +202,47 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsive */
+/* Responsive (شاشات التلفون) */
 @media (max-width: 600px) {
-    header h1 { font-size: 2.5rem; }
-    .menu-grid { grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); }
+    header h1 { 
+        font-size: 2.2rem; 
+    }
+    
+    /* عرض كرتين في كل سطر مع تقليل المسافات */
+    .menu-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; /* تصغير الفراغ بين الكروت */
+    }
+
+    /* تعديل حجم الكرت من الداخل ليناسب العرض الجديد */
+    .card-img {
+        height: 120px; /* تصغير ارتفاع الصورة */
+    }
+
+    .card-content {
+        padding: 10px;
+        flex-direction: column; /* ترتيب الاسم والسعر فوق بعض */
+        align-items: center; /* توسيط النص */
+        text-align: center;
+        gap: 5px;
+    }
+
+    .item-name {
+        font-size: 0.95rem; /* تصغير الخط شوي */
+    }
+
+    .item-price {
+        font-size: 0.9rem;
+    }
+
+    /* تصغير أزرار الأقسام والعناوين لتناسب التلفون */
+    .category-btn {
+        font-size: 0.9rem;
+        padding: 6px 15px;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+        padding: 8px 30px;
+    }
 }
